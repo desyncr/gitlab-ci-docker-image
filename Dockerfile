@@ -12,7 +12,7 @@ RUN php composer.phar global require phpunit/phpunit ^7
 RUN php composer.phar global require squizlabs/php_codesniffer
 RUN php composer.phar global require phpro/grumphp
 
-RUN php composer.phar global require -vvv olivertappin/phpcs-diff
+RUN php composer.phar global require olivertappin/phpcs-diff dev-support-ruleset-as-argument
 RUN php composer.phar global require desyncr/grumphp-phpcs-diff ^0.0
 
 RUN PATH="$HOME/.composer/vendor/bin:$PATH"
